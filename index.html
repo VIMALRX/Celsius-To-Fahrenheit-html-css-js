@@ -1,4 +1,44 @@
-function temp(n){
-    return n*1.8+32
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            width: 50%;
+            margin-left: 25%;
+            margin-right: 25%;
+            margin-top: 10%;
+            background-color: black;
+            border: none;
+            text-align: center;
+        }
+        h2{
+            color: white;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <br><br>
+        <h2>CELSIUS TO FAHRENHEIT</h2>
+        <label for="">ENTER THE VALUE</label>
+        <input type="number" name="" id="input" style="outline: none;position: relative;right: 30px;">
+        <button type="button" onclick="temp()">check</button><br><br>
+        <span id="output" ></span>
+        <br><br>
+    </div>
+    
+</body>
+<script>
+    function temp(){
+        const n=document.getElementById("input").value;
+   document.getElementById("output").textContent=n;
+   output.style.color="white";
 }
-console.log(temp(40)+" "+"fahrenheit")
+
+
+</script>
+</html>
